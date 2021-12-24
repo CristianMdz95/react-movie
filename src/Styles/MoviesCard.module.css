@@ -1,0 +1,19 @@
+.movieCard {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lavender;
+    text-align: center;
+    list-style: none;
+}
+
+.movieImage{
+    border-radius: 10px;
+    background-color: azure;
+}
+
+@media (max-width: 560px) {
+    .movieImage{
+        width: 90%;
+        height: auto;
+    }
+}
