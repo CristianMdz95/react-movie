@@ -1,16 +1,22 @@
 import { MoviesGrid } from "./Components/MoviesGrid";
 import styles from "./Styles/App.module.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// <MoviesGrid></MoviesGrid>
 export function App() {
-    return(
-    <div>
-        <header>
-            <h1 className={styles.title}></h1>
-        </header>
+    return (
+        <Router>
+            <header>
+                <h1 className={styles.title}>Pruba</h1>
+            </header>
 
-        <main>
-            <MoviesGrid></MoviesGrid>
-        </main>
-    </div>
+            <main>
+                <Routes>
+                    <Route path="/movie"> Movie </Route>
+                    <Route path="/"> Home </Route>
+                </Routes>
+            </main>
+            
+        </Router>
     );
 }
