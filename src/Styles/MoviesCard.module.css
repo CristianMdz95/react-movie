@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+.movieImage:hover{
+    opacity: 0.5;
+}
+
 .movieImage{
     border-radius: 10px;
     background-color: azure;
