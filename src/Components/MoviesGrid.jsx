@@ -3,11 +3,7 @@ import { MovieCard } from './MovieCard';
 import styles from '../Styles/MoviesGrid.module.css'
 import { get } from '../utils/httpClient';
 import { Spinner } from './Spinner';
-import { useLocation } from 'react-router-dom';
-
-function useQuery(){
-    return new URLSearchParams(useLocation().search);
-}
+import { useQuery } from './hooks/useQuery';
 
 export function MoviesGrid() {
 

@@ -9,7 +9,7 @@ export function MovieCard({ movie }) {
     
     return (
 
-        <li className={styles.movieCard}>
+        <li  className={styles.movieCard}>
             <Link to={"/movies/" + movie.id}>
                 <img width={230} height={345} className={styles.movieImage} src={imageUrl} alt={movie.title}></img>
                 <div>{movie.title}</div>
